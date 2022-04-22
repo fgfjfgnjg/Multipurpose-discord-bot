@@ -119,7 +119,7 @@ module.exports = {
         let button_back = new MessageButton().setStyle('SUCCESS').setCustomId('1').setEmoji("833802907509719130").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.back))
         let button_home = new MessageButton().setStyle('DANGER').setCustomId('2').setEmoji("🏠").setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.home))
         let button_forward = new MessageButton().setStyle('SUCCESS').setCustomId('3').setEmoji('832598861813776394').setLabel(handlemsg(client.la[ls].cmds.info.help.buttons.forward))
-        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji("840260133686870036").setLabel("Tutorial").setURL("https://youtu.be/E0R7d8gS908")
+        let button_tutorial = new MessageButton().setStyle('LINK').setEmoji("").setLabel("Support").setURL("https://dsc.gg/manloje")
         let menuOptions = [
           {
             label: "Overview",
@@ -283,8 +283,7 @@ but you can also do \`${prefix}setup-SYSTEM\` e.g. \`${prefix}setup-welcome\``)
             `>>> :gear: **${client.commands.map(a => a).length} Commands**
 :file_folder: on **${client.guilds.cache.size} Guilds**
 ⌚️ **${duration(client.uptime).map(i => `\`${i}\``).join("︲")} Uptime**
-📶 **\`${Math.floor(client.ws.ping)}ms\` Ping**
-<:MilratoDevelopment:900389724936609842>  Made by [**Milrato Development**](https://discord.gg/milrato)`)
+📶 **\`${Math.floor(client.ws.ping)}ms\` Ping**`)
           .addField("How to get help?", `>>> **\` 1. Way \`** *Use the Buttons, to swap the Pages*\n**\` 2. Way \`** *Use the Menu to select all Help Pages, you want to display*\n**\` 3. Way \`** *Watch the Youtube Tutorial*`)
 
         let err = false;
